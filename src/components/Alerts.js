@@ -10,7 +10,7 @@ import DatePicker from "react-date-picker";
 function Alerts() {
   const [data_1, setdata_1] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:5006/api/").then((obj) => {
+    axios.get("https://sep-main-1.onrender.com/api/").then((obj) => {
       if (obj.data) {
         setdata_1(obj.data);
 
